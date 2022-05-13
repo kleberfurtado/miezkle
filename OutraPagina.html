@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="nosso-estilo.css" />
+
+    <script>
+      var posicaoX = 0
+      var posicaoY = 50
+      var tamanho = 30
+      var portalA = [1420, 90]
+      var portalB = [120, 610]
+
+
+      function deslocarParaDireita() {
+        if (posicaoX == 1500) {
+            return 
+        }
+        posicaoX = posicaoX + 20
+        document.querySelector('#quadrado').style['left'] = posicaoX + 'px'
+      }
+
+
+      function deslocarParaEsquerda() {
+        if (posicaoX == 0) {
+            return 
+        }
+        posicaoX = posicaoX - 20
+        document.querySelector('#quadrado').style['left'] = posicaoX + 'px'
+      }
+
+
+      function deslocarParaBaixo() {
+        if (posicaoY == 710) {
+            return 
+        }
+        posicaoY = posicaoY + 20
+        document.querySelector('#quadrado').style['top'] = posicaoY + 'px'
+      }
+
+
+      function deslocarParaCima() {
+        if (posicaoY == 30) {
+          return
+        }
+        posicaoY = posicaoY - 20
+        document.querySelector('#quadrado').style['top'] = posicaoY + 'px'
+      }
+///////////////////////////////////////////////////////////////////////////////////////*
+
+      function aumentarQuadrado() {
+        if (tamanho < 300) {
+          tamanho = tamanho + 30
+        } else {
+          window.alert('Tem como não, esse balão quadrado vai explodir!')
+        }
+        document.querySelector('#quadrado').style['width'] = tamanho + 'px'
+        document.querySelector('#quadrado').style['height'] = tamanho + 'px'
+      }
+
+      function diminuirQuadrado() {
+        if (tamanho > 0) {
+          tamanho = tamanho - 30
+        } else {
+          window.alert('Tem como não, já sumiu o quadrado!')
+        }
+
+        document.querySelector('#quadrado').style['width'] = tamanho + 'px'
+        document.querySelector('#quadrado').style['height'] = tamanho + 'px'
+      }
+
+      function eventosTeclado(evento) {
+        if (evento.key == 'ArrowRight') {
+          deslocarParaDireita()
+        } else if (evento.key == 'ArrowLeft') {
+          deslocarParaEsquerda()
+        } else if (evento.key == 'ArrowDown') {
+          deslocarParaBaixo()
+        } else if (evento.key == 'ArrowUp') {
+          deslocarParaCima()
+        }
+        console.log(evento)
+      }
+
+    </script>
+  </head>
+
+  <body onkeydown="eventosTeclado(event)">
+    <div
+      id="background"
+      class="fundo-rosa"
+      style="position: fixed; width: 100%; height: 100%"
+    >
+        <div class="button">
+
+          <button onclick="deslocarParaDireita()"><b>Direita</b></button>
+          <button onclick="deslocarParaEsquerda()"><b>Esquerda</b></button>
+          <button onclick="deslocarParaBaixo()"><b>Baixo</b> </button>
+          <button onclick="deslocarParaCima()"><b>Cima</b></button>
+          
+          <button onclick="aumentarQuadrado()"><b>Aumentar</b></button>
+          <button onclick="diminuirQuadrado()"><b>Diminuir</b></button>
+        </div>
+
+        <div class="circulo portalA">
+        </div>
+  
+        <div class="circulo portalB">
+        </div>
+
+      <div
+        id="quadrado"
+        class="fundo-amarelo"
+        style="position: fixed; width: 30px; height: 30px; top: 50px"
+      ></div>
+
+      
+
+    </div>
+  </body>
+</html>

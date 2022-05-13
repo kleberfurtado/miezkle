@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  color: blue;
+  position: fixed;
+  top: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.fundo-amarelo {
+  background-color: rgba(255, 255, 0, 0.89);
+}
+
+.fundo-rosa {
+  background-color: rgb(75, 69, 69);
+}
+
+button {
+  margin: 1px;
+  padding: 3px;
+  background-color: whitesmoke;
+}
+
+.circulo {
+  border-radius: 50%;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background-color: aquamarine;
+}
+
+.portalA {
+  left: 1420px;
+  top: 90px;
+}
+
+.portalB {
+  left:120px;
+  top: 610px;
+}
+
+
+
+
+
+
