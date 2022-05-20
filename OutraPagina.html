@@ -8,6 +8,19 @@
       var tamanho = 30
       var portalA = [1420, 90]
       var portalB = [120, 610]
+      
+      
+      function teleTransportar() {
+        if(posicaoX == portalA[0] && posicaoY == portalA[1]) {
+          posicaoX = portalB[0]
+          posicaoY = portalB[1]
+        } else if(posicaoX == portalB[0] && posicaoY == portalB[1]) {
+          posicaoX = portalA[0]
+          posicaoY = portalA[1]
+        }
+        document.querySelector('#quadrado').style['left'] = posicaoX + 'px'
+        document.querySelector('#quadrado').style['top'] = posicaoY + 'px'
+      } 
 
 
       function deslocarParaDireita() {
@@ -78,6 +91,7 @@
           deslocarParaCima()
         }
         console.log(evento)
+        teleTransportar()
       }
 
     </script>
