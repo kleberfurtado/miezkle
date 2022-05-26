@@ -1,0 +1,5 @@
+- [ ] Mudar para quando clicar no botão [Esquerda], o quadrado deverá andar para a esquerda automaticamente
+- [ ] Mudar para quando clicar no botão [Cima], o quadrado deverá andar para cima automaticamente
+- [ ] Mudar para quando clicar no botão [Baixo], o quadrado deverá andar para baixo automaticamente
+- [ ] Criar um botão [Parar]
+- [ ] Quando clicar no botão [Parar] o quadrado deverá parar onde está
