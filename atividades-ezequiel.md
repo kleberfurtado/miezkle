@@ -1,7 +1,7 @@
-- [ ] Mudar para quando clicar no botão [Esquerda], o quadrado deverá andar para a esquerda automaticamente
-- [ ] Mudar para quando clicar no botão [Cima], o quadrado deverá andar para cima automaticamente
-- [ ] Mudar para quando clicar no botão [Baixo], o quadrado deverá andar para baixo automaticamente
-- [ ] Criar um botão [Parar]
-- [ ] Quando clicar no botão [Parar] o quadrado deverá parar onde está
+- [x] Mudar para quando clicar no botão [Esquerda], o quadrado deverá andar para a esquerda automaticamente
+- [x] Mudar para quando clicar no botão [Cima], o quadrado deverá andar para cima automaticamente
+- [x] Mudar para quando clicar no botão [Baixo], o quadrado deverá andar para baixo automaticamente
+- [x] Criar um botão [Parar]
+- [x] Quando clicar no botão [Parar] o quadrado deverá parar onde está
 - [ ] Criar efeito antes de teletransportar: aumentar o quadrado, mantendo no centro do circulo e diminuir até desaparecer e aparecer no outro. Quando aparecer, deverá fazer o mesmo efeito e parar em seu tamanho original.
 - [ ] Se o tamanho do quadrado for maior que o portal de teletransporte (círculo), não deverá teletransportar
